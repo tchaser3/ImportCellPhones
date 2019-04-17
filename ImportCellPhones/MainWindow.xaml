@@ -3,10 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
         xmlns:local="clr-namespace:ImportCellPhones"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <DataGrid x:Name="dgrResults" HorizontalAlignment="Left" Height="549" Margin="10,10,0,0" VerticalAlignment="Top" Width="603"/>
+        <Button x:Name="btnImportExcel" Content="Import Excel" FontSize="20" HorizontalAlignment="Left" Margin="635,130,0,0" VerticalAlignment="Top" Width="132" Height="67" Click="BtnImportExcel_Click"/>
+        <Button x:Name="btnProcess" Content="Process" FontSize="20" HorizontalAlignment="Left" Margin="635,212,0,0" VerticalAlignment="Top" Width="132" Height="67" Click="BtnProcess_Click"/>
+
     </Grid>
 </Window>
